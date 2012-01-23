@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D1B87A214CD9DB500514067 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B87A014CD9DB500514067 /* CategoryViewController.m */; };
+		9D1B87A314CD9DB500514067 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B87A114CD9DB500514067 /* CategoryViewController.xib */; };
+		9D6A68BB14CCD0A600697CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6A68BA14CCD0A600697CA9 /* UIKit.framework */; };
+		9D6A68BD14CCD0A600697CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6A68BC14CCD0A600697CA9 /* Foundation.framework */; };
+		9D6A68BF14CCD0A600697CA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6A68BE14CCD0A600697CA9 /* CoreGraphics.framework */; };
+		9D6A68C514CCD0A600697CA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D6A68C314CCD0A600697CA9 /* InfoPlist.strings */; };
+		9D6A68C714CCD0A600697CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A68C614CCD0A600697CA9 /* main.m */; };
+		9D6A68CB14CCD0A600697CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A68CA14CCD0A600697CA9 /* AppDelegate.m */; };
+		9D6A68D414CCD10100697CA9 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A68D214CCD10100697CA9 /* ArticleViewController.m */; };
+		9D6A68D514CCD10100697CA9 /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6A68D314CCD10100697CA9 /* ArticleViewController.xib */; };
+		9DC230D014CCFB2B00F6298A /* Articles.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC230CF14CCFB2B00F6298A /* Articles.m */; };
+		9DC230D914CD034500F6298A /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC230D714CD034500F6298A /* PostViewController.m */; };
+		9DC230DA14CD034500F6298A /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC230D814CD034500F6298A /* PostViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D1B879F14CD9DB500514067 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		9D1B87A014CD9DB500514067 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		9D1B87A114CD9DB500514067 /* CategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		9D6A68B614CCD0A600697CA9 /* Inkwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inkwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6A68BA14CCD0A600697CA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D6A68BC14CCD0A600697CA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D6A68BE14CCD0A600697CA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D6A68C214CCD0A600697CA9 /* Inkwell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Inkwell-Info.plist"; sourceTree = "<group>"; };
+		9D6A68C414CCD0A600697CA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D6A68C614CCD0A600697CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D6A68C814CCD0A600697CA9 /* Inkwell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Inkwell-Prefix.pch"; sourceTree = "<group>"; };
+		9D6A68C914CCD0A600697CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D6A68CA14CCD0A600697CA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D6A68D114CCD10100697CA9 /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		9D6A68D214CCD10100697CA9 /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		9D6A68D314CCD10100697CA9 /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
+		9DC230CE14CCFB2B00F6298A /* Articles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Articles.h; sourceTree = "<group>"; };
+		9DC230CF14CCFB2B00F6298A /* Articles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Articles.m; sourceTree = "<group>"; };
+		9DC230D614CD034400F6298A /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		9DC230D714CD034500F6298A /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		9DC230D814CD034500F6298A /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D6A68B314CCD0A600697CA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6A68BB14CCD0A600697CA9 /* UIKit.framework in Frameworks */,
+				9D6A68BD14CCD0A600697CA9 /* Foundation.framework in Frameworks */,
+				9D6A68BF14CCD0A600697CA9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D6A68AB14CCD0A600697CA9 = {
+			isa = PBXGroup;
+			children = (
+				9D6A68C014CCD0A600697CA9 /* Inkwell */,
+				9D6A68B914CCD0A600697CA9 /* Frameworks */,
+				9D6A68B714CCD0A600697CA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D6A68B714CCD0A600697CA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A68B614CCD0A600697CA9 /* Inkwell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D6A68B914CCD0A600697CA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A68BA14CCD0A600697CA9 /* UIKit.framework */,
+				9D6A68BC14CCD0A600697CA9 /* Foundation.framework */,
+				9D6A68BE14CCD0A600697CA9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D6A68C014CCD0A600697CA9 /* Inkwell */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A68C914CCD0A600697CA9 /* AppDelegate.h */,
+				9D6A68CA14CCD0A600697CA9 /* AppDelegate.m */,
+				9D6A68D114CCD10100697CA9 /* ArticleViewController.h */,
+				9D6A68D214CCD10100697CA9 /* ArticleViewController.m */,
+				9D6A68D314CCD10100697CA9 /* ArticleViewController.xib */,
+				9DC230D614CD034400F6298A /* PostViewController.h */,
+				9DC230D714CD034500F6298A /* PostViewController.m */,
+				9DC230D814CD034500F6298A /* PostViewController.xib */,
+				9DC230CE14CCFB2B00F6298A /* Articles.h */,
+				9DC230CF14CCFB2B00F6298A /* Articles.m */,
+				9D1B879F14CD9DB500514067 /* CategoryViewController.h */,
+				9D1B87A014CD9DB500514067 /* CategoryViewController.m */,
+				9D1B87A114CD9DB500514067 /* CategoryViewController.xib */,
+				9D6A68C114CCD0A600697CA9 /* Supporting Files */,
+			);
+			path = Inkwell;
+			sourceTree = "<group>";
+		};
+		9D6A68C114CCD0A600697CA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D6A68C214CCD0A600697CA9 /* Inkwell-Info.plist */,
+				9D6A68C314CCD0A600697CA9 /* InfoPlist.strings */,
+				9D6A68C614CCD0A600697CA9 /* main.m */,
+				9D6A68C814CCD0A600697CA9 /* Inkwell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D6A68B514CCD0A600697CA9 /* Inkwell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D6A68CE14CCD0A600697CA9 /* Build configuration list for PBXNativeTarget "Inkwell" */;
+			buildPhases = (
+				9D6A68B214CCD0A600697CA9 /* Sources */,
+				9D6A68B314CCD0A600697CA9 /* Frameworks */,
+				9D6A68B414CCD0A600697CA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Inkwell;
+			productName = Inkwell;
+			productReference = 9D6A68B614CCD0A600697CA9 /* Inkwell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D6A68AD14CCD0A600697CA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9D6A68B014CCD0A600697CA9 /* Build configuration list for PBXProject "Inkwell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9D6A68AB14CCD0A600697CA9;
+			productRefGroup = 9D6A68B714CCD0A600697CA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D6A68B514CCD0A600697CA9 /* Inkwell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D6A68B414CCD0A600697CA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6A68C514CCD0A600697CA9 /* InfoPlist.strings in Resources */,
+				9D6A68D514CCD10100697CA9 /* ArticleViewController.xib in Resources */,
+				9DC230DA14CD034500F6298A /* PostViewController.xib in Resources */,
+				9D1B87A314CD9DB500514067 /* CategoryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D6A68B214CCD0A600697CA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6A68C714CCD0A600697CA9 /* main.m in Sources */,
+				9D6A68CB14CCD0A600697CA9 /* AppDelegate.m in Sources */,
+				9D6A68D414CCD10100697CA9 /* ArticleViewController.m in Sources */,
+				9DC230D014CCFB2B00F6298A /* Articles.m in Sources */,
+				9DC230D914CD034500F6298A /* PostViewController.m in Sources */,
+				9D1B87A214CD9DB500514067 /* CategoryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D6A68C314CCD0A600697CA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D6A68C414CCD0A600697CA9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D6A68CC14CCD0A600697CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D6A68CD14CCD0A600697CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D6A68CF14CCD0A600697CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Inkwell/Inkwell-Prefix.pch";
+				INFOPLIST_FILE = "Inkwell/Inkwell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D6A68D014CCD0A600697CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Inkwell/Inkwell-Prefix.pch";
+				INFOPLIST_FILE = "Inkwell/Inkwell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D6A68B014CCD0A600697CA9 /* Build configuration list for PBXProject "Inkwell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6A68CC14CCD0A600697CA9 /* Debug */,
+				9D6A68CD14CCD0A600697CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D6A68CE14CCD0A600697CA9 /* Build configuration list for PBXNativeTarget "Inkwell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6A68CF14CCD0A600697CA9 /* Debug */,
+				9D6A68D014CCD0A600697CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D6A68AD14CCD0A600697CA9 /* Project object */;
+}
