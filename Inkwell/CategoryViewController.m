@@ -7,9 +7,10 @@
 //
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define kLatestInkwellPostsURL [NSURL URLWithString: @"http://www.fa-inkwell.org/?json=1"]
+#define kLatestInkwellPostsURL [NSURL URLWithString: @"http://www.fa-inkwell.org/?json=get_category_index"]
 
 #import "CategoryViewController.h"
+#import "ArticleViewController.h"
 
 @implementation CategoryViewController
 @synthesize tableView;
@@ -19,7 +20,10 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = @"Categories";
+        UITabBarItem *tbi = [self tabBarItem];
+        UIImage *image = [UIImage imageNamed:@"categoryGlyph.png"];
+        [tbi setImage:image];
     }
     return self;
 }
@@ -38,8 +42,6 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Categories";
-    
     dispatch_async(kBgQueue, ^{
         NSData* data = [NSData dataWithContentsOfURL: 
                         kLatestInkwellPostsURL];
@@ -55,7 +57,7 @@
                           options:kNilOptions 
                           error:&error];
     
-    categories = [json objectForKey:@"posts"];
+    categories = [json objectForKey:@"categories"];
     
     //NSLog(@"posts: %@", latestPosts);
     //NSLog(@"%@", [post objectForKey:@"title"]);
@@ -90,7 +92,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [[[categories objectAtIndex:[indexPath row]] objectForKey:@"categories"] objectForKey:@"title"]; 
+    cell.textLabel.text = [[categories objectAtIndex:[indexPath row]] objectForKey:@"title"]; 
     [cell.textLabel setFont:[UIFont fontWithName:@"System" size:11]];
     
     return cell;
@@ -98,7 +100,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    NSString *slug = [[categories objectAtIndex:[indexPath row]] objectForKey:@"slug"];
+    NSString *urlString = [NSString stringWithFormat:@"http://www.fa-inkwell.org/?json=get_category_posts&slug=%@",slug];
+    NSURL *url = [NSURL URLWithString:urlString];
+    ArticleViewController *avc = [[ArticleViewController alloc] init];
+    [avc setUrl:url];
+    [self.navigationController pushViewController:avc animated:YES];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [avc setTitle:[[categories objectAtIndex:[indexPath row]] objectForKey:@"title"]];
 }
 
 @end

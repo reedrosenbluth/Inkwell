@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleBlackOpaque];
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     ArticleViewController *articleViewController = [[ArticleViewController alloc] init];
     CategoryViewController *categoryViewController = [[CategoryViewController alloc] init];
@@ -27,8 +28,9 @@
     [tabBarController setViewControllers:tabBarItems];
     self.window.rootViewController = tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
-    articleNavController.navigationBar.tintColor = [UIColor blackColor];
-    categoryNavController.navigationBar.tintColor = [UIColor blackColor];
+    articleNavController.navigationBar.tintColor = [UIColor darkGrayColor];
+    categoryNavController.navigationBar.tintColor = [UIColor darkGrayColor];
+    tabBarController.tabBar.tintColor = [UIColor darkGrayColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
