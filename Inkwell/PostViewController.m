@@ -21,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [scrollView setContentSize:CGSizeMake(320, 960)];
+        self.hidesBottomBarWhenPushed = YES;
     }
     return self;
 }

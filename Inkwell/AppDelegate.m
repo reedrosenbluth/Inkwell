@@ -25,11 +25,14 @@
     UINavigationController *articleNavController = [[UINavigationController alloc] initWithRootViewController:articleViewController];
     UINavigationController *categoryNavController = [[UINavigationController alloc] initWithRootViewController:categoryViewController];
     NSArray *tabBarItems = [NSArray arrayWithObjects:articleNavController,categoryNavController, nil];
+    
     [tabBarController setViewControllers:tabBarItems];
     self.window.rootViewController = tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
-    articleNavController.navigationBar.tintColor = [UIColor darkGrayColor];
-    categoryNavController.navigationBar.tintColor = [UIColor darkGrayColor];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor darkGrayColor]];
+    //articleNavController.navigationBar.tintColor = [UIColor darkGrayColor];
+    //categoryNavController.navigationBar.tintColor = [UIColor darkGrayColor];
     tabBarController.tabBar.tintColor = [UIColor darkGrayColor];
     [self.window makeKeyAndVisible];
     return YES;

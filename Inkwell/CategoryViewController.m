@@ -11,16 +11,19 @@
 
 #import "CategoryViewController.h"
 #import "ArticleViewController.h"
+#import "InfoViewController.h"
 
 @implementation CategoryViewController
 @synthesize tableView;
+@synthesize loadingIndicator;
+@synthesize hudBG;
 @synthesize categories;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Categories";
+        self.title = @"Sections";
         UITabBarItem *tbi = [self tabBarItem];
         UIImage *image = [UIImage imageNamed:@"categoryGlyph.png"];
         [tbi setImage:image];
@@ -48,6 +51,12 @@
         [self performSelectorOnMainThread:@selector(fetchedData:) 
                                withObject:data waitUntilDone:YES];
     });
+    
+    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    infoButton.frame = CGRectMake(0, 0, 22, 22);
+    [infoButton addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *info = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
+    [[self navigationItem] setRightBarButtonItem:info];
 }
 
 - (void)fetchedData:(NSData *)responseData {
@@ -61,13 +70,28 @@
     
     //NSLog(@"posts: %@", latestPosts);
     //NSLog(@"%@", [post objectForKey:@"title"]);
-    NSLog(@"data retrieved");
+    
+    [loadingIndicator stopAnimating];
+    
+    [UIView animateWithDuration:.2 animations:^(void){
+        [hudBG setAlpha:0];
+    }];
+    
     [tableView reloadData];
+}
+
+- (void)showInfo
+{
+    InfoViewController *ivc = [[InfoViewController alloc] init];
+    UINavigationController *infoNav = [[UINavigationController alloc] initWithRootViewController:ivc];
+    [[self navigationController] presentModalViewController:infoNav animated:YES];
 }
 
 - (void)viewDidUnload
 {
     [self setTableView:nil];
+    [self setLoadingIndicator:nil];
+    [self setHudBG:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

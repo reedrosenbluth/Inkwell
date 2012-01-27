@@ -12,6 +12,7 @@
 #import "ArticleViewController.h"
 #import "PostViewController.h"
 #import "CustomCell.h"
+#import "InfoViewController.h"
 
 @implementation ArticleViewController
 
@@ -55,6 +56,12 @@
         [self performSelectorOnMainThread:@selector(fetchedData:) 
                                withObject:data waitUntilDone:YES];
     });
+    
+    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    infoButton.frame = CGRectMake(0, 0, 22, 22);
+    [infoButton addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *info = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
+    [[self navigationItem] setRightBarButtonItem:info];
 }
 
 - (void)fetchedData:(NSData *)responseData {
@@ -68,7 +75,7 @@
     
     //NSLog(@"posts: %@", latestPosts);
     //NSLog(@"%@", [post objectForKey:@"title"]);
-    NSLog(@"data retrieved");
+
     [loadingIndicator stopAnimating];
     
     [UIView animateWithDuration:.2 animations:^(void){
@@ -76,6 +83,13 @@
     }];
     
     [tableView reloadData];
+}
+
+- (void)showInfo
+{
+    InfoViewController *ivc = [[InfoViewController alloc] init];
+    UINavigationController *infoNav = [[UINavigationController alloc] initWithRootViewController:ivc];
+    [[self navigationController] presentModalViewController:infoNav animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
