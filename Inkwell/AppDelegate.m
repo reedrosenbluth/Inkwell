@@ -31,6 +31,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [[UINavigationBar appearance] setTintColor:[UIColor darkGrayColor]];
+    //UIImage *customNavBarImage = [UIImage imageNamed:@"InkwellCustomNavBar"];
+    //[[UINavigationBar appearance] setBackgroundImage:customNavBarImage forBarMetrics:UIBarMetricsDefault];
     //articleNavController.navigationBar.tintColor = [UIColor darkGrayColor];
     //categoryNavController.navigationBar.tintColor = [UIColor darkGrayColor];
     tabBarController.tabBar.tintColor = [UIColor darkGrayColor];

@@ -69,6 +69,12 @@
                                         "color: 3B3B3B;"
                                         "font: 14pt \"Helvetica\";"
                                     "}"
+                                    "A:link {"
+                                    "text-decoration: none;"
+                                    "font-weight: bold;"
+                                    "border-bottom:1px dashed grey;"
+                                    "color: AB1111;"
+                                    "}"
                             "</style>";
     NSString *backMatter = @"</html>";
     NSString *html = [NSString stringWithFormat:@"%@<h1>%@</h1><h2><b>by %@</b></h2><body>%@</body>%@", frontMatter, title, author, post, backMatter];
