@@ -13,6 +13,7 @@
 #import "PostViewController.h"
 #import "CustomCell.h"
 #import "InfoViewController.h"
+#import "NSString+HTML.h"
 
 @implementation ArticleViewController
 
@@ -131,8 +132,11 @@
                 cell = (CustomCell *)oneObject;
     }
     
-    cell.titleLabel.text = [[latestPosts objectAtIndex:[indexPath row]] valueForKey:@"title"];
-    cell.previewLabel.text = [[latestPosts objectAtIndex:[indexPath row]] valueForKey:@"excerpt"];
+    NSString *itemTitle = [[[latestPosts objectAtIndex:[indexPath row]] valueForKey:@"title"] stringByConvertingHTMLToPlainText];
+    NSString *itemPreview = [[[latestPosts objectAtIndex:[indexPath row]] valueForKey:@"excerpt"] stringByConvertingHTMLToPlainText];
+    
+    cell.titleLabel.text = itemTitle;
+    cell.previewLabel.text = itemPreview;
     cell.authorLabel.text = [[[latestPosts objectAtIndex:[indexPath row]] valueForKey:@"author"] valueForKey:@"name"];
     cell.categoryLabel.text = [[[[latestPosts objectAtIndex:[indexPath row]] valueForKey:@"categories"] objectAtIndex:0] valueForKey:@"title"];
     

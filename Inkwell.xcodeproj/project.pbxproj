@@ -10,8 +10,16 @@
 		9D1B87A214CD9DB500514067 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B87A014CD9DB500514067 /* CategoryViewController.m */; };
 		9D1B87A314CD9DB500514067 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B87A114CD9DB500514067 /* CategoryViewController.xib */; };
 		9D2CABBC14D7231500F74BFD /* InkwellCustomNavBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D2CABBB14D7231500F74BFD /* InkwellCustomNavBar@2x.png */; };
-		9D2CABC014D77A4F00F74BFD /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CABBF14D77A4F00F74BFD /* NSString+HTML.m */; };
-		9D2CABC314D77A8B00F74BFD /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CABC214D77A8B00F74BFD /* GTMNSString+HTML.m */; };
+		9D2CABD014D77D5F00F74BFD /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CABCF14D77D5F00F74BFD /* GTMNSString+HTML.m */; };
+		9D2CABD314D77D6A00F74BFD /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CABD214D77D6A00F74BFD /* NSString+HTML.m */; };
+		9D52A05B14D8B3660070DF09 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05314D8B3660070DF09 /* blackArrow.png */; };
+		9D52A05C14D8B3660070DF09 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05414D8B3660070DF09 /* blackArrow@2x.png */; };
+		9D52A05D14D8B3660070DF09 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05514D8B3660070DF09 /* blueArrow.png */; };
+		9D52A05E14D8B3660070DF09 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05614D8B3660070DF09 /* blueArrow@2x.png */; };
+		9D52A05F14D8B3660070DF09 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05714D8B3660070DF09 /* grayArrow.png */; };
+		9D52A06014D8B3660070DF09 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05814D8B3660070DF09 /* grayArrow@2x.png */; };
+		9D52A06114D8B3660070DF09 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05914D8B3660070DF09 /* whiteArrow.png */; };
+		9D52A06214D8B3660070DF09 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D52A05A14D8B3660070DF09 /* whiteArrow@2x.png */; };
 		9D546A4F14CE18140006DD01 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D546A4E14CE18140006DD01 /* CustomCell.m */; };
 		9D6A68BB14CCD0A600697CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6A68BA14CCD0A600697CA9 /* UIKit.framework */; };
 		9D6A68BD14CCD0A600697CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6A68BC14CCD0A600697CA9 /* Foundation.framework */; };
@@ -55,10 +63,18 @@
 		9D1B87A014CD9DB500514067 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		9D1B87A114CD9DB500514067 /* CategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		9D2CABBB14D7231500F74BFD /* InkwellCustomNavBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InkwellCustomNavBar@2x.png"; sourceTree = "<group>"; };
-		9D2CABBE14D77A4F00F74BFD /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
-		9D2CABBF14D77A4F00F74BFD /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
-		9D2CABC114D77A8B00F74BFD /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		9D2CABC214D77A8B00F74BFD /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		9D2CABCE14D77D5F00F74BFD /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		9D2CABCF14D77D5F00F74BFD /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		9D2CABD114D77D6A00F74BFD /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		9D2CABD214D77D6A00F74BFD /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		9D52A05314D8B3660070DF09 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		9D52A05414D8B3660070DF09 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		9D52A05514D8B3660070DF09 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		9D52A05614D8B3660070DF09 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		9D52A05714D8B3660070DF09 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		9D52A05814D8B3660070DF09 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		9D52A05914D8B3660070DF09 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		9D52A05A14D8B3660070DF09 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		9D546A4D14CE18140006DD01 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		9D546A4E14CE18140006DD01 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		9D6A68B614CCD0A600697CA9 /* Inkwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inkwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,10 +169,10 @@
 			children = (
 				9D6A68C914CCD0A600697CA9 /* AppDelegate.h */,
 				9D6A68CA14CCD0A600697CA9 /* AppDelegate.m */,
-				9D2CABC114D77A8B00F74BFD /* GTMNSString+HTML.h */,
-				9D2CABC214D77A8B00F74BFD /* GTMNSString+HTML.m */,
-				9D2CABBE14D77A4F00F74BFD /* NSString+HTML.h */,
-				9D2CABBF14D77A4F00F74BFD /* NSString+HTML.m */,
+				9D2CABCE14D77D5F00F74BFD /* GTMNSString+HTML.h */,
+				9D2CABCF14D77D5F00F74BFD /* GTMNSString+HTML.m */,
+				9D2CABD114D77D6A00F74BFD /* NSString+HTML.h */,
+				9D2CABD214D77D6A00F74BFD /* NSString+HTML.m */,
 				9D6A68D114CCD10100697CA9 /* ArticleViewController.h */,
 				9D6A68D214CCD10100697CA9 /* ArticleViewController.m */,
 				9D6A68D314CCD10100697CA9 /* ArticleViewController.xib */,
@@ -193,6 +209,14 @@
 		9D76E52014CF6F3F00591A88 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9D52A05314D8B3660070DF09 /* blackArrow.png */,
+				9D52A05414D8B3660070DF09 /* blackArrow@2x.png */,
+				9D52A05514D8B3660070DF09 /* blueArrow.png */,
+				9D52A05614D8B3660070DF09 /* blueArrow@2x.png */,
+				9D52A05714D8B3660070DF09 /* grayArrow.png */,
+				9D52A05814D8B3660070DF09 /* grayArrow@2x.png */,
+				9D52A05914D8B3660070DF09 /* whiteArrow.png */,
+				9D52A05A14D8B3660070DF09 /* whiteArrow@2x.png */,
 				9D2CABBB14D7231500F74BFD /* InkwellCustomNavBar@2x.png */,
 				9D76E55814CF7F9900591A88 /* MouseApplauseTransBkgLight@2x.png */,
 				9D76E55614CF7F1700591A88 /* info@2x.png */,
@@ -297,6 +321,14 @@
 				9D76E55714CF7F1700591A88 /* info@2x.png in Resources */,
 				9D76E55914CF7F9900591A88 /* MouseApplauseTransBkgLight@2x.png in Resources */,
 				9D2CABBC14D7231500F74BFD /* InkwellCustomNavBar@2x.png in Resources */,
+				9D52A05B14D8B3660070DF09 /* blackArrow.png in Resources */,
+				9D52A05C14D8B3660070DF09 /* blackArrow@2x.png in Resources */,
+				9D52A05D14D8B3660070DF09 /* blueArrow.png in Resources */,
+				9D52A05E14D8B3660070DF09 /* blueArrow@2x.png in Resources */,
+				9D52A05F14D8B3660070DF09 /* grayArrow.png in Resources */,
+				9D52A06014D8B3660070DF09 /* grayArrow@2x.png in Resources */,
+				9D52A06114D8B3660070DF09 /* whiteArrow.png in Resources */,
+				9D52A06214D8B3660070DF09 /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +347,8 @@
 				9D1B87A214CD9DB500514067 /* CategoryViewController.m in Sources */,
 				9D546A4F14CE18140006DD01 /* CustomCell.m in Sources */,
 				9D76E53014CF7A5700591A88 /* InfoViewController.m in Sources */,
-				9D2CABC014D77A4F00F74BFD /* NSString+HTML.m in Sources */,
-				9D2CABC314D77A8B00F74BFD /* GTMNSString+HTML.m in Sources */,
+				9D2CABD014D77D5F00F74BFD /* GTMNSString+HTML.m in Sources */,
+				9D2CABD314D77D6A00F74BFD /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
